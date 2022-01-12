@@ -18,6 +18,6 @@ ssl_certificate_key /etc/nginx/https-cert-tli/tli_demo.pem;
 
 # apache <VirtualHost *:443>
 ````
-SSLCertificateFile /etc/nginx/https-cert-tli/tli_demo.crt;
-SSLCertificateKeyFile /etc/nginx/https-cert-tli/tli_demo.pem;
+SSLCertificateFile /etc/nginx/https-cert-tli/tli_demo.crt
+SSLCertificateKeyFile /etc/nginx/https-cert-tli/tli_demo.pem
 ````
