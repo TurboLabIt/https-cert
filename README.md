@@ -10,8 +10,14 @@ sudo chown www-data:www-data /etc/nginx/https-cert-tli -R
 sudo chmod ug=rX,o= /etc/nginx/https-cert-tli -R
 ````
 
-# server {}
+# nginx server {}
 ````
 ssl_certificate /etc/nginx/https-cert-tli/tli_demo.crt;
 ssl_certificate_key /etc/nginx/https-cert-tli/tli_demo.pem;
+````
+
+# apache <VirtualHost *:443>
+````
+SSLCertificateFile /etc/nginx/https-cert-tli/tli_demo.crt;
+SSLCertificateKeyFile /etc/nginx/https-cert-tli/tli_demo.pem;
 ````
